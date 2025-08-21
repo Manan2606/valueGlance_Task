@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stock Price Dashboard</title>
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- React & ReactDOM (CDN) -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+
+    <!-- Chart.js (CDN) for the optional line chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Optional: your config with a Finnhub token (if you create it) -->
+    <script src="./config.js" defer></script>
+  </head>
+
+  <body class="bg-gray-50 min-h-screen p-4">
+    <main class="max-w-5xl mx-auto">
+      <div id="root"></div>
+      <p class="text-center text-xs text-gray-400 mt-8">
+        Data provider: Finnhub (if token set) or Yahoo Finance (fallback).
+      </p>
+    </main>
+
+    <!-- App code -->
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
